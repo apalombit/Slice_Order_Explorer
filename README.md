@@ -22,11 +22,11 @@ So even if the slice timing used for scanning is unclear or not reported (e.g. P
 Absolutely no warranty on functionality, tested on freely available datasets from OpenfMRI project (http://www.openfmri.org) on ds000133, ds000172, ds000201, ds000220, ds000245, ds000256. The approach is functional in all tested cases.
 
 Note:
-## 1 - it was found to always work to automatically detect whether interleaved rather than sequential was used
-2 - it detects mixed cases of patterns within same dataset
-3 - inference of direction (ascending / descending) less reliable if data is noisy or with lots of motion ( -5 helps)
-4 - inference of correct slice order from short TR scans works for main pattern but direction less clear (TR < 1.5 sec) 
-     ...  might be not relevant correction anyway ?
-5 - improving the stats might be less effective than using context data (ie. what is the scanner/model/slices/...)
+#### 1 - it was found to always work to automatically detect whether interleaved rather than sequential was used
+#### 2 - it detects mixed cases of patterns within same dataset
+#### 3 - inference of direction (ascending / descending) less reliable if data is noisy or with lots of motion ( -5 helps)
+#### 4 - inference of correct slice order from short TR scans works for main pattern but direction less clear (TR < 1.5 sec) 
+####     ...  might be not relevant correction anyway ?
+#### 5 - improving the stats might be less effective than using context data (ie. what is the scanner/model/slices/...)
  
 PS: you need to have fsl, nipype and so on available locally !
